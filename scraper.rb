@@ -1,3 +1,4 @@
+require 'scraperwiki'
 require 'rubygems'
 require 'mechanize'
 require 'json'
