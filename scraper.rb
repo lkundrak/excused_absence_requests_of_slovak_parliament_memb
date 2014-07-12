@@ -48,7 +48,7 @@ def list_excuses
 end
 
 def make_uuid(i)
-  { :unique_id => "#{i[:name].downcase.gsub(/\W/, '-')}-#{i[:date].gsub(/(\W|\.)/, '-')}" }
+  { "unique_id" => "#{i[:name].downcase.gsub(/\W/, '-')}-#{i[:date].gsub(/(\W|\.)/, '-')}" }
 end
 
 list_excuses do |item|
