@@ -25,7 +25,7 @@ end
 def mop_list
   list = []
   @agent.get(BASE_URL) do |page|
-    page.at('div#_sectionLayoutContainer__panelContent').search('select#_sectionLayoutContainer_ctl00_PoslanecMasterID option').each do |opt|
+    page.at('div#_sectionLayoutContainer__panelContent').search('select#_sectionLayoutContainer_ctl01_PoslanecMasterID option').each do |opt|
       next if opt.attr('value') == '-1'
       yield :id => opt.attr('value'), :name => opt.text
     end
